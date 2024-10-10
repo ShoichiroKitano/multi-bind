@@ -1,0 +1,13 @@
+[package]
+name = "multi-bind-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "multi_bind_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+multi-bind = { path = "../" }
+pyo3 = { version = "^0.22.3", features = ["extension-module"] }
+tokio = { version = "1.40.0", features = ["full"] }
